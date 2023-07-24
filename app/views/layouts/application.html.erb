@@ -8,9 +8,14 @@
 
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
     <%= javascript_importmap_tags %>
+    <%= javascript_include_tag "breakpoints.min.js" %>
+    <%= javascript_include_tag "main.js" %>
+    <%= javascript_include_tag "jquery.min.js" %>
+    <%= javascript_include_tag "browser.min.js" %>
+    
   </head>
 
-  <body>
+  <body class="is-preload-0 is-preload-1 is-preload-2">
     <div id="main">
       <%= render "layouts/header"%>
       <%= yield %>
